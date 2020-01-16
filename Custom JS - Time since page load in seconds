@@ -1,0 +1,5 @@
+function(){
+  var now = new Date();
+  var start = google_tag_manager[{{Container ID}}].dataLayer.get("gtm.start")
+  return Math.floor((now-start)/1000)
+}
